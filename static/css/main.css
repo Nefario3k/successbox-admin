@@ -1,0 +1,316 @@
+:root {
+    --primary-color: #F88B2A;
+    --secondary-color: #000;
+    --background-color: #F3F4F6;
+    --active-accordion-color: #263238;
+    --active-accordion-text-color: #EBEBEB;
+    --active-accordion-hover-list-color: #FFF0E2;
+    --nav-active-color: #F88B2A1A;
+    --nav-h3-color: #383B4C;
+    --faded-color: #00000099;
+    --faded-color-alt: #A1A1A1;
+    --faded-color-second: #666666;
+    --faded-color-third: #66666680;
+    --box-shadow-light: 0px 0.5px 1.75px rgba(0, 0, 0, 0.039), 0px 1.85px 6.25px rgba(0, 0, 0, 0.19);
+    --box-shadow-input: 0px 7px 64px rgba(0, 0, 0, 0.07);
+    --box-shadow-user: 0px 4px 26px rgba(0, 0, 0, 0.25);
+    --filter-shadow: 0px 4px 20px rgba(56, 59, 76, 0.25);
+    --tick-box: #F2C94C;
+    --success-color: #43A047;
+    --success-color-second: #12B855;
+    --danger-color: #B00020;
+    --border-color: #ECEBED;
+    --border-color-second: #613EEA1A;
+    --border-color-third: #00000033;
+    --placeholder-color: #D0C9D6;
+    --bar-color: #6200EE;
+    font-size: 62.5%;
+
+    --body-color: #EFF1F9;
+
+    --smaller-font-size: 0.9rem;
+    --small-font-size: 1.2rem;
+    --normal-font-size: 1.4rem;
+    --panel-font-size: 1.6rem;
+    --h2-font-size: 2.6rem;
+    --header-font-size: 2.4rem;
+    --font-light: 400;
+    --font-medium: 500;
+    --font-bold: 600;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+* {
+    font-family: 'Roboto',
+        sans-serif !important;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    object-fit: contain;
+}
+
+input,
+textarea,
+button,
+select {
+    font: inherit;
+    caret-color: var(--primary-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.row {
+    margin: 0 !important;
+}
+
+::-moz-selection {
+    /* Code for Firefox */
+    color: var(--secondary-color);
+    background: var(--primary-color);
+}
+
+::selection {
+    color: var(--secondary-color);
+    background: var(--primary-color);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: none;
+    background: #fff;
+    /* border-radius: 10px; */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    /* border-radius: 10px; */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-color);
+    transition: all 0.5s linear;
+}
+
+.v-application ul,
+.v-application ol {
+    padding-left: 0 !important;
+}
+
+.v-application .primary--text {
+    color: var(--primary-color) !important;
+    caret-color: var(--secondary-color) !important;
+}
+
+/* active links styles */
+
+.nuxt-link-exact-active.nuxt-link-active {
+    color: var(--primary-color);
+}
+
+/* active links styles end */
+
+
+/* form inputs styles  */
+
+input {
+    padding: 0 15px;
+    width: 100%;
+    background-color: transparent;
+    font-size: 1.4rem;
+    height: 4rem;
+    color: var(--secondary-color);
+    -moz-appearance: none;
+    /* Firefox */
+    -webkit-appearance: none;
+    /* Safari and Chrome */
+    appearance: none;
+    outline: none !important;
+    border: 1px solid var(--border-color);
+    border-radius: 0;
+}
+
+input:focus {
+    -moz-appearance: none;
+    /* Firefox */
+    -webkit-appearance: none;
+    /* Safari and Chrome */
+    appearance: none;
+    outline: none !important;
+    /* border: 1px solid var(--primary-color); */
+}
+
+textarea {
+    color: var(--secondary-color);
+    padding: 10px 15px;
+    width: 100%;
+    background-color: transparent;
+    font-size: 1.4rem;
+    outline: none;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 0;
+    -moz-appearance: none;
+    /* Firefox */
+    -webkit-appearance: none;
+    /* Safari and Chrome */
+    appearance: none;
+}
+
+textarea:focus {
+    outline: none !important;
+    border: 1px solid var(--primary-color) !important;
+}
+
+/* form inputs styles end */
+
+
+/* custom classes  */
+
+.justify-evenly {
+    justify-content: space-evenly !important;
+}
+
+.relative {
+    position: relative !important;
+}
+
+.absolute {
+    position: absolute !important;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* custom classes end */
+
+/* nav Panel styles  */
+
+.v-list-group__header.v-list-item.v-list-item--link.theme--light {
+    height: 2rem !important;
+    padding-right: 0;
+    margin: 0 !important;
+}
+
+.v-list-group .v-list-group__header .v-list-item__icon.v-list-group__header__append-icon {
+    margin-right: 28px !important;
+    margin-left: 0 !important;
+}
+
+/* nav Panel styles end */
+
+/* nav bar styles  */
+
+.v-toolbar__content {
+    padding: 0 16px !important;
+}
+
+/* nav bar styles end */
+
+/* pagination styles */
+
+nav[aria-label='Pagination Navigation'] {
+    border: 1px solid var(--border02-color) !important;
+    border-radius: 8px;
+}
+
+.v-pagination__navigation {
+    background: transparent !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+
+    /* border: 1px solid var(--border02-color) !important; */
+}
+
+.v-pagination__navigation i {
+    color: var(--primary-color) !important;
+}
+
+/* li:has(.v-pagination__navigation[disabled=disabled]) {
+    display: none;
+} */
+
+.v-pagination__item {
+    background: transparent !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 2px solid transparent;
+    font-weight: 500;
+    font-size: 1.4rem !important;
+}
+
+.v-pagination__item.v-pagination__item--active {
+    background: var(--pagination-bg-color) !important;
+    color: var(--primary-color) !important;
+    border-radius: 6px;
+    border-color: var(--primary-color);
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.v-input--selection-controls .v-input__slot>.v-label {
+    margin: 0;
+    margin-top: 2px;
+    margin-left: 0px;
+    color: #383b4c;
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
+    transition: all 0.2s ease-in-out;
+}
+
+
+/* pagination styles end */
+
+/* general styles  */
+#pageBody {
+    background-color: var(--body-color);
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/* table styles  */
+
+
+
+/* table styles end */
+
+.mobileTable,
+.mobileCaption {
+    display: none !important;
+}
+
+.mini__area #pie-chart {
+    height: 300px !important;
+}
+
+.button--left--outlined {
+    border: none !important;
+}
+
+/* .mini__area #lineChart {
+    height: 250px !important;
+    width: 100% !important;
+} */
+
+/* general styles end  */

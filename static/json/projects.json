@@ -1,0 +1,55 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "Mon",
+      "color": "#6200EE",
+      "status": "completed",
+      "summary": 10
+    },
+    {
+      "id": 2,
+      "name": "Tue",
+      "color": "#6200EE",
+      "status": "completed",
+      "summary": 18
+    },
+    {
+      "id": 3,
+      "name": "Wed",
+      "status": "completed",
+      "color": "#6200EE",
+      "summary": 17
+    },
+    {
+      "id": 4,
+      "name": "Thu",
+      "status": "completed",
+      "color": "#6200EE",
+      "summary": 17
+    },
+    {
+      "id": 5,
+      "name": "Fri",
+      "status": "completed",
+      "color": "#6200EE",
+      "summary": 8
+    },
+    {
+      "id": 6,
+      "name": "Sat",
+      "color": "#6200EE",
+      "status": "completed",
+      "summary": 17
+    },
+    {
+      "id": 7,
+      "name": "Sun",
+      "color": "#6200EE",
+      "status": "completed",
+      "summary": 10
+    }
+  ],
+  "statusCode": 200,
+  "message": "success"
+}
