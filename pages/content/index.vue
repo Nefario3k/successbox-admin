@@ -234,7 +234,7 @@ export default {
         { title: "LITERATURE" },
         { title: "BIOLOGY" },
         { title: "ECONOMICS" },
-        { title: "CIVIL EDUCATION" },
+        { title: "CIVIC EDUCATION" },
         { title: "COMPUTER STUDIES" },
         { title: "PHYSICS" },
         { title: "CHEMISTRY" },
