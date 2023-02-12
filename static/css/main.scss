@@ -520,6 +520,12 @@
     }
     tbody {
       tr {
+        &:hover {
+          background-color: var(--nav-active-color) !important;
+        }
+        &.v-data-table__selected {
+          background-color: var(--nav-active-color) !important;
+        }
         td {
           &.text-start {
             min-height: 4rem;

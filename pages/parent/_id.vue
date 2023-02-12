@@ -58,7 +58,7 @@
                 />
               </svg>
 
-              <span>edit SCHOOL</span>
+              <span>edit PARENT</span>
             </v-btn>
           </div>
         </div>
