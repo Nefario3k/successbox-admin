@@ -168,10 +168,10 @@
         </v-row>
 
         <v-row
-          style="padding-left: 0"
+          style="padding-left: 0; height: max-content"
           class="col-12 col-md-4 col-lg-4 col-xl-4"
         >
-          <div class="col-12 chart mini">
+          <div style="height: max-content" class="col-12 chart mini">
             <v-card class="chart__container">
               <div class="chart__header">
                 <div>
@@ -213,7 +213,7 @@
                 </v-menu>
               </div>
 
-              <div class="chart__chart-area">
+              <div style="margin: 0 -24px" class="chart__chart-area">
                 <client-only v-if="pieChartData" placeholder="Loading...">
                   <PieChart
                     :chartData="pieChartData"
@@ -303,7 +303,7 @@ export default {
             backgroundColor: ["#26A69A", "#6200EE", "#EE6002", "#FFBA07"],
             borderColor: "rgba(255, 255, 255, 1)",
             borderWidth: 2,
-            radius: 80,
+            radius: 100,
             hoverBackgroundColor: "#F88B2A",
             hoverOffset: 10,
           },
@@ -457,13 +457,14 @@ export default {
             },
             // rtl: true,
             position: "bottom",
+            align: "start",
             labels: {
-              // pointStyle: "circle",
+              pointStyle: "line",
               usePointStyle: true,
-              align: "start",
-              padding: 24,
-              color: "#000",
-              boxWidth: 9,
+              textAlign: "start",
+              padding: 14,
+              color: "#00000099",
+              boxWidth: 90,
               boxHeight: 9,
               font: {
                 size: 12,

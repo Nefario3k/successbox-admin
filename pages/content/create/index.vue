@@ -722,7 +722,7 @@
                     </svg>
                     <span>save</span></v-btn
                   >
-                  <v-btn color="#F88B2A" class="Btn publish"
+                  <v-btn disabled color="#F88B2A" class="Btn publish"
                     ><svg
                       width="11"
                       height="15"

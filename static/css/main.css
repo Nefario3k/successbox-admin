@@ -287,6 +287,19 @@ nav[aria-label='Pagination Navigation'] {
     background-color: var(--body-color);
     min-height: 100vh;
     overflow: hidden;
+    animation: transIn 0.3s linear 0s;
+}
+
+@keyframes transIn {
+    from {
+        opacity: 0.5;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* table styles  */
@@ -301,7 +314,7 @@ nav[aria-label='Pagination Navigation'] {
 }
 
 .mini__area #pie-chart {
-    height: 300px !important;
+    /* height: 300px !important; */
 }
 
 .button--left--outlined {

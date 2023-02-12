@@ -212,8 +212,8 @@
           </div>
           <div class="col-9 row" style="margin: 0; padding-top: 0">
             <div class="col-6 chart">
-              <v-card class="chart__container mini">
-                <div class="chart__header">
+              <v-card style="padding: 0" class="chart__container mini">
+                <div style="padding: 24px 24px 0" class="chart__header">
                   <div>
                     <h3 class="chart__title">Tickets</h3>
                     <span class="chart__subtitle">Mar 21 - Mar 27</span>
@@ -306,7 +306,7 @@ export default {
             backgroundColor: ["#26A69A", "#6200EE", "#EE6002", "#FFBA07"],
             borderColor: "rgba(255, 255, 255, 1)",
             borderWidth: 2,
-            radius: 80,
+            radius: 100,
             hoverBackgroundColor: "#F88B2A",
             hoverOffset: 10,
           },
@@ -460,13 +460,14 @@ export default {
             },
             // rtl: true,
             position: "bottom",
+            align: "start",
             labels: {
-              // pointStyle: "circle",
+              pointStyle: "line",
               usePointStyle: true,
-              align: "start",
-              padding: 24,
-              color: "#000",
-              boxWidth: 9,
+              textAlign: "start",
+              padding: 14,
+              color: "#00000099",
+              boxWidth: 90,
               boxHeight: 9,
               font: {
                 size: 12,
@@ -643,4 +644,8 @@ export default {
 
 
 <style lang="scss" scoped>
+.content_row .school__offical {
+  flex-wrap: nowrap;
+  grid-gap: 15px;
+}
 </style>

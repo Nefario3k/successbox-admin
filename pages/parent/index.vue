@@ -61,11 +61,7 @@
 
               <span>Bulk upload</span>
             </v-btn>
-            <v-btn
-              @click="$refs.addSchool.showDialogue()"
-              color="var(--primary-color)"
-              class="button button--header"
-            >
+            <v-btn color="var(--primary-color)" class="button button--header">
               <svg
                 width="14"
                 height="15"
@@ -78,7 +74,7 @@
                   fill="white"
                 />
               </svg>
-              <span>ADD SCHOOL</span>
+              <span>ADD Parent</span>
             </v-btn>
           </div>
         </div>
@@ -263,7 +259,6 @@
         </div>
       </v-row>
     </section>
-    <ModalAddSchool ref="addSchool" />
   </div>
 </template>
 

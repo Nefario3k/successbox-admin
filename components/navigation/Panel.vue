@@ -38,7 +38,11 @@
             </v-list-item>
           </nuxt-link>
           <!-- Schools  -->
-          <nuxt-link to="/school" class="topNav">
+          <nuxt-link
+            :class="{ still__active: $route.path.includes('/school') }"
+            to="/school"
+            class="topNav"
+          >
             <v-list-item class="dropdownList">
               <v-list-item-icon>
                 <svg
@@ -58,7 +62,11 @@
             </v-list-item>
           </nuxt-link>
           <!-- student  -->
-          <nuxt-link to="/student" class="topNav">
+          <nuxt-link
+            :class="{ still__active: $route.path.includes('/student') }"
+            to="/student"
+            class="topNav"
+          >
             <v-list-item class="dropdownList">
               <v-list-item-icon>
                 <svg
@@ -78,7 +86,11 @@
             </v-list-item>
           </nuxt-link>
           <!-- parents -->
-          <nuxt-link to="/parent" class="topNav">
+          <nuxt-link
+            :class="{ still__active: $route.path.includes('/parent') }"
+            to="/parent"
+            class="topNav"
+          >
             <v-list-item class="dropdownList">
               <v-list-item-icon>
                 <svg
@@ -98,7 +110,11 @@
             </v-list-item>
           </nuxt-link>
           <!-- teachers -->
-          <nuxt-link to="/teacher" class="topNav">
+          <nuxt-link
+            :class="{ still__active: $route.path.includes('/teacher') }"
+            to="/teacher"
+            class="topNav"
+          >
             <v-list-item class="dropdownList">
               <v-list-item-icon>
                 <svg
@@ -118,7 +134,11 @@
             </v-list-item>
           </nuxt-link>
           <!-- content -->
-          <nuxt-link to="/content" class="topNav">
+          <nuxt-link
+            :class="{ still__active: $route.path.includes('/content') }"
+            to="/content"
+            class="topNav"
+          >
             <v-list-item class="dropdownList">
               <v-list-item-icon>
                 <svg
@@ -138,7 +158,11 @@
             </v-list-item>
           </nuxt-link>
           <!-- reports -->
-          <nuxt-link to="/reports" class="topNav">
+          <nuxt-link
+            :class="{ still__active: $route.path.includes('/reports') }"
+            to="/reports"
+            class="topNav"
+          >
             <v-list-item class="dropdownList">
               <v-list-item-icon>
                 <svg
@@ -158,7 +182,11 @@
             </v-list-item>
           </nuxt-link>
           <!-- subscriptions -->
-          <nuxt-link to="/subscription" class="topNav">
+          <nuxt-link
+            :class="{ still__active: $route.path.includes('/subscription') }"
+            to="/subscription"
+            class="topNav"
+          >
             <v-list-item class="dropdownList">
               <v-list-item-icon>
                 <svg
@@ -180,7 +208,11 @@
             </v-list-item>
           </nuxt-link>
           <!-- tickets -->
-          <nuxt-link to="/ticket" class="topNav">
+          <nuxt-link
+            :class="{ still__active: $route.path.includes('/ticket') }"
+            to="/ticket"
+            class="topNav"
+          >
             <v-list-item class="dropdownList">
               <v-list-item-icon>
                 <svg
@@ -200,7 +232,11 @@
             </v-list-item>
           </nuxt-link>
           <!-- Settings -->
-          <nuxt-link to="/settings" class="topNav">
+          <nuxt-link
+            :class="{ still__active: $route.path.includes('/settings') }"
+            to="/settings"
+            class="topNav"
+          >
             <v-list-item class="dropdownList">
               <v-list-item-icon>
                 <svg
@@ -346,6 +382,26 @@ export default {
     a {
       text-decoration: none;
       &.nuxt-link-active.nuxt-link-exact-active {
+        .dropdownList {
+          background-color: var(--nav-active-color);
+          transition: all 0.2s ease-in-out;
+          .item_title {
+            color: var(--primary-color) !important;
+            transition: all 0.2s ease-in-out;
+          }
+          svg {
+            rect {
+              stroke: var(--primary-color) !important;
+              transition: all 0.2s ease-in-out;
+            }
+            path {
+              fill: var(--primary-color) !important;
+              transition: all 0.2s ease-in-out;
+            }
+          }
+        }
+      }
+      &.still__active {
         .dropdownList {
           background-color: var(--nav-active-color);
           transition: all 0.2s ease-in-out;
