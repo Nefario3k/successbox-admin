@@ -22,6 +22,7 @@
     --border-color: #ECEBED;
     --border-color-second: #613EEA1A;
     --border-color-third: #00000033;
+    --border-color-fourth: #B3ACB6;
     --placeholder-color: #D0C9D6;
     --bar-color: #6200EE;
     font-size: 62.5%;
@@ -88,7 +89,7 @@ p {
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 4px;
     height: 10px;
 }
 
@@ -302,6 +303,30 @@ nav[aria-label='Pagination Navigation'] {
     }
 }
 
+@keyframes transLeft {
+    from {
+        opacity: 0.2;
+        transform: translateX(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes transRight {
+    from {
+        opacity: 0.2;
+        transform: translateX(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 /* table styles  */
 
 
@@ -319,6 +344,98 @@ nav[aria-label='Pagination Navigation'] {
 
 .button--left--outlined {
     border: none !important;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    -webkit-text-fill-color: #495057;
+    -webkit-background-color: rgba(0, 98, 255, 0.06);
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+@keyframes reveal-input {
+    from {
+        left: 14px;
+        top: 8px;
+        font-size: var(-normal-font-size);
+    }
+
+    to {
+        top: -10px;
+        left: 9px;
+        font-size: 1rem;
+    }
+}
+
+@keyframes unreveal-input {
+    from {
+        left: 14px;
+        top: 8px;
+        font-size: var(-normal-font-size);
+    }
+
+    to {
+        top: -10px;
+        left: 9px;
+        font-size: 1rem;
+    }
+}
+
+.errorStructure {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 90vh;
+}
+
+.errorStructure h1 {
+    margin-bottom: 20px;
+}
+
+.errorStructure h1 svg {
+    width: 30vw;
+    /* height: 21.5rem; */
+}
+
+.errorMessage {
+    font-weight: 700;
+    font-size: 3rem;
+    color: var(--secondary-color);
+    margin: 0 !important;
+
+}
+
+.errorSubText {
+    font-weight: 400;
+    font-size: 1.9rem;
+    color: var(--secondary-color);
+    margin: 0 !important;
+}
+
+.errorStructure p {
+    margin-bottom: 16px !important;
+}
+
+.errorMain {
+    background-color: #FFFBF3;
+    background-image: url("~/static/images/png/panel/dashboard.png");
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: center right 10%;
+}
+
+.errorMain.not404 {
+    background-color: #fff !important;
+    background-image: url("~/static/images/png/panel/dashboard.png") !important;
 }
 
 /* .mini__area #lineChart {
